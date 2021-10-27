@@ -36,8 +36,8 @@ class Rectangle {
 //
 //
 
-//2. NEW OBJECTS CREATION
-// We create new objects using the Rectangle class as a blueprint using the syntax
+//2. NEW OBJECTS CREATION, ALSO CALLED INSTANCES
+// We create new objects (instances) using the Rectangle class as a blueprint using the syntax
 // We pass the argument to the contructor; the number of arguments needs to be the same with the number of paramateres required by the constructor
 const rectangle1 = new Rectangle(5, 10, "red");
 const rectangle2 = new Rectangle(3, 9, "yellow");
@@ -52,7 +52,7 @@ const rectangle4 = new Rectangle(22, 22); // not enought arguments
 //
 //
 
-// 3. WORKING WITH THE OBJECTS
+// 3. WORKING WITH THE OBJECTS (INSTANCES)
 // Since all object will inherit from the base class, we can access all properties and methods they inherit from the base class
 // We use the following syntax (dot notation)
 console.log(rectangle1.height); // returns 5
