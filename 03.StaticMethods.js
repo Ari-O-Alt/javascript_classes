@@ -1,6 +1,7 @@
 // Satic methods are methods that can only be called on the class itself and not on an instance of that class
 // They are usefull when we build utilily classes (classes that group multiple helper methods together)
 // They are helper function relevant to the class but they don't requite an instance of that classto work (it will actuallt throw an error if we try to access it from an instance)
+// Usually, static methods are used to implement functions that belong to the class, but not to any particular object of it
 
 // We create a class which will hold a bunch of calculations related methods
 class PairOfNumbers {
