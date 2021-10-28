@@ -3,22 +3,22 @@
 // We do not need to use getters and setters but if you want to manipulate properties on the instance, they can come in handy
 
 class Rectangle {
-  // constructor
+  // Constructor
   constructor(l, w) {
-    // PROPERTIES
+    // Properties
     this._length = l;
     this._width = w;
     this.numberOfrequestsForLength = 0;
   }
 
-  // METHOD
+  // Method
   returnInfo() {
     console.log(
       `I am a rectangle with a width of ${this.width} and a height of ${this.length}!`
     );
   }
 
-  // GETTER
+  // Getter
   // it uses the get keyword
   // when we use this method (getter) we do not add round brackets at the end (see example)
   get length() {
@@ -26,7 +26,7 @@ class Rectangle {
     return this._length;
   }
 
-  // SETTER
+  // Setter
   // it uses the set keyword
   set length(newValue) {
     this._length = newValue;

@@ -3,12 +3,12 @@
 
 // 1. SYNTAX
 class Rectangle {
-  // each class has a constructor; a constructor is a function that will get called exactly once every time we build a new object using the class
+  // Each class has a constructor; a constructor is a function that will get called exactly once every time we build a new object using the class
   constructor(h, w, c) {
     // classes can have properties (height, width and color are properties of this class)
-    // properties must be specified in the constructor
-    // these are properties with values that can be set when creating a new object (the values we wish to use get passed to the constuctor)
-    // we can also give predefined values to these properties, and the constructor will be empty in this case (see alternative example)
+    // Properties must be specified in the constructor
+    // These are properties with values that can be set when creating a new object (the values we wish to use get passed to the constuctor)
+    // We can also give predefined values to these properties, and the constructor will be empty when creating instances (see alternative example)
 
     // IMPORTANT - all properties and methods inside a class need to use the "this" keyword
     this.height = h;
@@ -16,7 +16,7 @@ class Rectangle {
     this.color = c;
   }
 
-  // classes can have methods (getHeight and returnInfo are methods)
+  // Classes can have methods (getHeight and returnInfo are methods)
   getHeight() {
     return this.height;
   }
@@ -78,4 +78,8 @@ console.log(rectangle2.getHeight()); // returns 3
     }
   
   
-  } */
+  } 
+  
+  const newRectangle = new Rectangle(); // we can keep the constructor empty since we provided default values for the instance props
+  
+  */
