@@ -5,3 +5,5 @@ Short tutorial on Javascript classes with examples. The stucture or the repo is 
   - Creation of new objects (instances) using that class
   - Working with the new objects (accessing properties and methods on those objects)
 #### 02. GettersAndSetters.js
+  - What are getters ans setters
+  - Syntax for getters and setters
