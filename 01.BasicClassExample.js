@@ -55,7 +55,7 @@ const rectangle4 = new Rectangle(22, 22); // not enought arguments
 // 3. WORKING WITH THE OBJECTS (INSTANCES)
 // Since all object will inherit from the base class, we can access all properties and methods they inherit from the base class
 // We use the following syntax (dot notation)
-console.log(rectangle1.height); // returns 5
+console.log(rectangle1.length); // returns 5
 console.log(rectangle1.returnInfo()); // returns I am a rectangle with a width of 10, a height of 5 and I am red!
 console.log(rectangle4.color); // returns undefined, we never passed an argument for color to rectange4
 console.log(rectangle2.getHeight()); // returns 3
