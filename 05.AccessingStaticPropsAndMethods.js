@@ -50,7 +50,7 @@ console.log(newStaticMethodInstance.staticProperty); // returns "static property
 //
 //
 //
-// Inheritance of static properties and methods
+// 3. Inheritance of static properties and methods
 // Static properties and methods are inherited from the super class (more on inheritance later)
 class Animal {
   static planet = "Earth";
