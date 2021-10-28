@@ -1,8 +1,9 @@
 // Satic methods are methods that can only be called on the class itself and not on an instance of that class
 // They are usefull when we build utilily classes (classes that group multiple helper methods together)
+// They are helper function relevant to the class but they don't requite an instance of that classto work (it will actuallt throw an error if we try to access it from an instance)
 
 // We create a class which will hold a bunch of calculations related methods
-class Calculations {
+class PairOfNumbers {
   constructor(firstNumber, secondNumber) {
     this.firstNumber = firstNumber;
     this.secondNumber = secondNumber;
@@ -12,15 +13,24 @@ class Calculations {
   // Static methods needsto be places under the constructor
   static areResultsTheSame(firstPair, secondPair) {
     // here we're passing as arguments two instances created uisng the Calculations class
-    return firstPair.firstNumber + firstPair.secondNumber ===
+    return (
+      firstPair.firstNumber + firstPair.secondNumber ===
       secondPair.firstNumber + secondPair.secondNumber
-      ? true
-      : false;
+    );
+  }
+
+  // Static method
+  static isValidPair(pair) {
+    return pair.firstNumber && pair.secondNumber ? true : false;
   }
 }
 
-const calc1 = new Calculations(5, 12);
-const calc2 = new Calculations(5, 12);
-const calc3 = new Calculations(7, 12);
-console.log(Calculations.areResultsTheSame(calc1, calc2)); // returns true
-console.log(Calculations.areResultsTheSame(calc1, calc3)); // returns false
+const pair1 = new PairOfNumbers(5, 12);
+const pair2 = new PairOfNumbers(5, 12);
+const pair3 = new PairOfNumbers(7, 12);
+const pair4 = new PairOfNumbers(50);
+console.log(PairOfNumbers.areResultsTheSame(pair1, pair2)); // returns true
+console.log(PairOfNumbers.areResultsTheSame(pair1, pair3)); // returns false
+console.log(PairOfNumbers.isValidPair(pair1)); // returns true
+console.log(PairOfNumbers.isValidPair(pair4)); // returns false
+console.log(pair1.isValidPair(pair2)); // Error: pair1.isValidPair is not a function - we are trying to access a static method on an instance
