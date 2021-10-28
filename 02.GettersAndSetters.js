@@ -1,5 +1,6 @@
 // Getters and setters on a class are used to defined methods on that class, methods that will be later used as if they are properties
 // Getters and setters allow us to define custom behaviour for reading and writing a given property on your class (foe example, add extra logic)
+// We do not need to use getters and setters but if you want to manipulate properties on the instance, they can come in handy
 
 class Rectangle {
   // constructor
