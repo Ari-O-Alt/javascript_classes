@@ -46,4 +46,4 @@ const cat1 = new Cat("Jenny", 4);
 
 console.log(animal1.makeASound()); // returns "This is a basic animal sound!"
 console.log(cat1.makeASound()); // returns "This is a basic cat sound!"
-console.log(cat1.printdetails()); // returns
+console.log(cat1.printdetails()); // returns "This is an animal called Jenny ans it's 4 years old" (from the base class) AND "This is an animal called Jenny ans it's 4 years old and it's actually a cat!" (from the instance)
