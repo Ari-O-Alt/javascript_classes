@@ -20,3 +20,10 @@ Short tutorial on Javascript classes with examples. The stucture or the repo is 
   - Accessing static properties and methods from inside other static methods
   - Accessing static properties and methods from inside the constructor or other methods of that class
   - Inheritance of static properties and methods
+#### 06.Inheritance.js
+  - What it is inheritance
+  - How classes inherit and syntax
+#### 07.Polymorphism.js
+  - What it is polymorphism
+  - How classes cans use polymorphism and syntax
+  
