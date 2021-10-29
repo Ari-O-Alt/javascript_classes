@@ -9,8 +9,8 @@ class Animal {
 
   // Constructor, will be called when creating a new object using the "Animal class"
   constructor(name, continent) {
-    this.name = name;
-    this.continent = continent;
+    this._name = name;
+    this._continent = continent;
   }
 
   // Method
@@ -21,5 +21,17 @@ class Animal {
   // Static method, only accessible on the class and not on instances
   static checkForDoubles(theAnimal) {
     return `The ${theAnimal} is not yet in the database!`;
+  }
+}
+
+class Dog extends Animal {
+  // we call the constructor, as usually
+  // we have the same properties as the parent class + others specific to the child class (age, species)
+  constructor(name, continent, age, species) {
+    // foe everything to work, we need to call the super function which basically means calling the parent's class constructor
+    super(name, continent);
+
+    this._age = age;
+    this._species = species;
   }
 }
